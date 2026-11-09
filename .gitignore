@@ -1,0 +1,30 @@
+build/
+*/build/
+out/
+bin/
+
+# 2. 忽略 CMake 自动生成的中间文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# 3. 忽略 C++ 编译生成的各种目标文件和可执行文件
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+*.dll
+# 4. 忽略 VS Code 的本地配置（每个人都有自己习惯，不需要同步）
+.vscode/
+.idea/
+*.swp
+
+# 5. 忽略系统自动生成的缓存垃圾
+.DS_Store
+Thumbs.db
+*~

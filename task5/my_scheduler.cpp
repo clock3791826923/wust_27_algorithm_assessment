@@ -87,7 +87,7 @@ Action MyScheduler::decide(const View& v,int e)
             int fl=f+dir_2;
             while (fl>=1 && fl<=kFloors)
             {
-                if (hc1(v, fl, room)) 
+                if (hc2(v, fl, room)) 
                 {
                     target = fl;
                     break;

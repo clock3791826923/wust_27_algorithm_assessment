@@ -32,7 +32,7 @@ set和map都基于二叉搜索树 set可以自动排序
 3.线程：
 ```bash
 std::thread p(producer);
-std::threak c(consumer);
+std::thread c(consumer);
 p.join();
 c.join();
 ```
@@ -61,14 +61,14 @@ std::this_thread::sleep_for(std::chrono millisecons);//停顿
 std::chrono::steady_clock::time_point send_time()=std::chorono::steady_clock::now();
 double hs=std::chrono::duration<double, std::milli>(ft- p.send_time).count();//算时间段
 ```
-5.filesysytem  
+5.filesysystem  
 ```bash
 std::filesystem::path path;
 std::error_code ec;
 std::filesystem::exists(path,ec);
 auto time=std::filesystem::last_write_time(path,ec);//获取最后改动时间,加ec可以得到文件的错误
 ```
-6.std::optionl<函数return类型>  函数名（参数）   //无值可以输出std::nullopt  
+6.std::optional<函数return类型>  函数名（参数）   //无值可以输出std::nullopt  
 ## 三、为什么c++需要预先编译而不能像python一样直接运行，从源文件到可执行文件编译工具链做了哪些操作
 c++是编译型语言，在编译时需要被翻译成二进制机器码给CPU执行并对语法错误进行检查；python是解释型语言，由解释器边翻译边执行。
 ## 四、在linux中为什么要用sudo，为什么不全程使用root账

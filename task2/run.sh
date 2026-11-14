@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 command=$1
 if [ "$command" = "build" ]; then
     echo "Building the project..."
